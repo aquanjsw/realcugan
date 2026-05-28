@@ -113,12 +113,10 @@
             nativeBuildInputs = [ pkgs.makeWrapper ];
             buildInputs = [ pythonEnv ];
           };
-
-        realcugan = self.packages.${system}.default;
-
-        overlays.default = final: prev: {
-          realcugan = self.packages.${final.system}.realcugan;
-        };
       });
+
+      overlays.default = final: prev: {
+        realcugan = self.packages.${final.stdenv.hostPlatform.system}.default;
+      };
     };
 }
