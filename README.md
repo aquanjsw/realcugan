@@ -1,5 +1,12 @@
 # RealCUGAN with Python CLI
 
+## Features
+
+- Auto detection of input type (image or video)
+- Using CUDA if available, otherwise CPU
+
+## Usage
+
 ```
 > nix develop
 > python main.py -h
@@ -27,7 +34,7 @@ options:
   --output OUTPUT       Output directory, default: <input-dir>/out
   --force               Overwrite existing output files
 
-Video:
+video:
   --threads-per-card THREADS_PER_CARD
   --crf CRF             FFmpeg CRF value (lower is better quality)
   --preset PRESET       FFmpeg preset (e.g. slow, medium, fast, faster)

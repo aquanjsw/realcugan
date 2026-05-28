@@ -1,0 +1,41 @@
+{
+  "nodes": {
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1779560665,
+        "narHash": "sha256-tpyBcxPpcQb8ukyNF7DoCwfSY3VPsxHoYwj00Cayv5o=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "64c08a7ca051951c8eae34e3e3cb1e202fe36786",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nixpkgs": "nixpkgs",
+        "weights": "weights"
+      }
+    },
+    "weights": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1779954741,
+        "narHash": "sha256-sDohJgVm2b1nCH4vd9piNHlTQGjeCZgD5yxar5dUDJM=",
+        "type": "tarball",
+        "url": "https://github.com/aquanjsw/realcugan/releases/download/weights/weights.tar.gz"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://github.com/aquanjsw/realcugan/releases/download/weights/weights.tar.gz"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
