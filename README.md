@@ -8,8 +8,8 @@
 ## Usage
 
 ```
-> nix develop
-> python main.py -h
+> nix build
+> ./result/bin/realcugan -h
 usage: main.py [-h] [--scale {2,3,4}] [--no-pro] [--denoise {-1,0,1,2,3}] [--no-half] [--cache-mode {0,1,2,3}] [--tile TILE] [--alpha ALPHA]
                [--output OUTPUT] [--force] [--threads-per-card THREADS_PER_CARD] [--crf CRF] [--preset PRESET]
                input
